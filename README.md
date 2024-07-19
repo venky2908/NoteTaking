@@ -20,11 +20,6 @@ python -m venv venv
 Install the dependencies:
 pip install -r requirements.txt
 
-Set up environment variables: Create a .env file in the backend directory with the following content:
-SECRET_KEY=<your-secret-key>
-
-MONGODB_URL=<your-mongodb-connection-string>
-
 Run the FastAPI server:
 
 uvicorn main:app --reload

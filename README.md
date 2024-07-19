@@ -14,6 +14,7 @@ cd <repository-folder>\backend
 Create a virtual environment and activate it:
 
 python -m venv venv
+
 .\venv\Scripts\activate
 
 Install the dependencies:
@@ -21,16 +22,20 @@ pip install -r requirements.txt
 
 Set up environment variables: Create a .env file in the backend directory with the following content:
 SECRET_KEY=<your-secret-key>
+
 MONGODB_URL=<your-mongodb-connection-string>
 
 Run the FastAPI server:
+
 uvicorn main:app --reload
 
 Navigate to the frontend directory:
 cd <repository-folder>\frontend
 
 Install the dependencies:
+
 npm install
+
 Set up environment variables: Create a .env file in the frontend directory with the following content:
 VITE_API_URL=http://127.0.0.1:8000
 
@@ -40,10 +45,12 @@ npm run dev
 Start the backend server:
 cd <repository-folder>\backend
 .\venv\Scripts\activate
+
 uvicorn main:app --reload
 
 Start the frontend server:
 cd <repository-folder>\frontend
 npm run dev
+
 Access the application by opening your browser and navigating to http://localhost:5173.
 
